@@ -100,7 +100,7 @@ after idos;
 -- relatorio
 
 select O.idos as OS,tipo1 as Tipo,situacao as Situação,equipamento as Equipamento,defeito as Defeito,
-servico as Serviço,tecnico as Tecnico,valor as Valor,
+servico as Serviço,tecnico as Tecnico,valor as Valor,dataos as Dataos
 C.nomecli as Nome, fone1 as Fone, emailcli as Email
 from tb_os as O
 inner join tb_cliente as C on (O.idcli = C.idcli);
