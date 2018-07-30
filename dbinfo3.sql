@@ -97,6 +97,8 @@ on delete no action;
 alter table tb_os add dataos timestamp default current_timestamp
 after idos;
 
+-- relatorio
+
 select O.idos as OS,tipo1 as Tipo,situacao as Situação,equipamento as Equipamento,defeito as Defeito,
 servico as Serviço,tecnico as Tecnico,valor as Valor,
 C.nomecli as Nome, fone1 as Fone, emailcli as Email
